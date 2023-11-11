@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Login page</title>
+    <!-- google font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet" />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/entry-page.css" />
+    
+ 
+    <style>
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  
+
+
+
+
+h6{
+  text-align: left;
+  font-size: medium;
+  margin-top: 0px;
+  font-weight: 1000;
+  
+}
+  
+  nav {
+    float: right;
+    margin-top: 10px;
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    font-size: 17px;
+    justify-content: space-evenly; 
+    text-decoration:none;
+    background-color:beige;
+  }
+
+  
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color:beige;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Oswald', sans-serif;
+        background-image: url('.jpg');
+        background-repeat: no-repeat;
+      }
+
+      .left-column {
+       
+        padding: 20px;
+
+      }
+    </style>
+
+<h6>StudySync</h6>
+
+  
+</head>
+
+  </head>
+  <body>
+    <header>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="log.html">login</a>
+              <a href="sign.html">sign up</a>
+              </nav>
+  </header> 
+    <div class="row height-full">
+      <!-- left side -->
+      <div
+        class="left-column flex flex-column height-full justify-center items-center"
+      >
+        <h1 class="welcoming-title">welcome </h1>
+        <h2>please login here</h2>
+                <form class="form" autocomplete="off">
+          <label for="email" class="label">Email</label>
+          <input type="email" name="email" id="email" class="input" required />
+
+          <label for="password" class="label">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="input"
+            required
+          />
+
+          <button
+            type="submit"
+            class="button regular-button pink-background cta-btn"
+          >
+           <a href="dash.html">  Log in </a>
+          </button>
+        </form>
+        <p class="sign-up-prompt">
+          Don’t have an account?
+          <a href="./sign.html" class="sign-up-link">Sign up</a>
+        </p>
+      </div>
+      
+    </div>
+  </body>
+</html>

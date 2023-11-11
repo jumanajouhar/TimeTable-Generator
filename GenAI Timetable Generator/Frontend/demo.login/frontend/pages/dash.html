@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management System - Dashboard</title>
+    <!-- google font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    
+<style>
+
+nav {
+    float: right;
+    margin-top: 10px;
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    font-size: 17px;
+    justify-content: space-evenly; 
+    text-decoration:none;
+    background-color:beige;
+  }
+  h6{
+  text-align: left;
+  font-size: medium;
+  margin-top: 0px;
+  font-weight: 1000;
+  
+}
+
+  </style>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="log.html">login</a>
+      <a href="sign.html">sign up</a>
+      </nav>
+
+      <h6>StudySync</h6>
+
+  </head>
+  <body>
+    <div class="max-width-container">
+        <div class="header flex items-center justify-between">
+          <h1 class="title">Topic_wise</h1><br>
+
+          </div>
+          </div>
+  <table>
+  <form> 
+    <!-- tasks -->
+    <div class="max-width-container">
+        <!-- list view -->
+        <div id="list-view" class="list-view">
+          <div class="list-container pink">
+            <h2 class="list-header">
+              <span class="circle pink-background"></span
+              ><span class="text">Student Info</span>
+            </h2>
+
+      
+  
+      <label for="name"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="email" id="email" required><br>
+  
+      <label for="psw"><b>Student ID</b></label><br>
+      <input type="password" placeholder="Enter Student id" name="psw" id="psw" required><br>
+  
+      <label for="psw-repeat"><b>Contact</b></label><br>
+      <input type="password" placeholder="Contact details" name="psw-repeat" id="psw-repeat" required><br>
+      </div>
+
+
+
+       <!-- 2tasks -->
+    <div class="max-width-container">
+        <!-- list view -->
+        <div id="list-view" class="list-view">
+          <div class="list-container pink">
+            <h2 class="list-header">
+              <span class="circle black-background"></span
+              ><span class="text">Academic Info</span>
+            </h2>
+
+      
+  
+      <label for="degree"><b>Degree</b></label><br>
+      <input type="text" placeholder="enter degree" name="email" id="email" required><br>
+  
+      <label for="psw"><b>Branch</b></label><br>
+      <input type="text" placeholder="specialised branch" name="text" id="psw" required><br>
+  
+      <label for="sem"><b>Semester</b></label><br>
+      <input type="text" placeholder="current semester" name="psw-repeat" id="psw-repeat" required><br>
+
+      <label for="sem"><b>University</b></label><br>
+      <input type="text" placeholder="university" name="psw-repeat" id="psw-repeat" required><br>
+
+
+
+      </div>
+       <!-- 3tasks -->
+    <div class="max-width-container">
+        <!-- list view -->
+        <div id="list-view" class="list-view">
+          <div class="list-container pink">
+            <h2 class="list-header">
+              <span class="circle pink-background"></span
+              ><span class="text">Subject Info</span>
+            </h2>
+
+      
+  
+      <label for="name"><b>Subject</b></label><br>
+      <input type="text" placeholder="Enter sub" name="email" id="email" required><br>
+  
+      <label for="psw"><b>Mastery level</b></label><br>
+      <input type="text" placeholder="Enter Student caliber level" name="psw" id="psw" required><br>
+  
+      <label for="psw-repeat"><b>Study method</b></label><br>
+      <input type="password" placeholder="mode of study" name="psw-repeat" id="psw-repeat" required><br>
+
+      <label for="sem"><b>Duration</b></label><br>
+      <input type="text" placeholder="total time period" name="psw-repeat" id="psw-repeat" required><br>
+
+      </div>
+  
+     
+      <button 
+            type="submit"
+            class="button regular-button black-background cta-btn"
+          >
+           <a href="dash.html"> Submit</a>
+          </button>
+        
+    </div>
+   </table> 
+  
+    
+  </form>
