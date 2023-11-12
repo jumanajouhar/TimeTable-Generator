@@ -6,5 +6,4 @@ Technology stack:
 Frontend: HTML, CSS, JS
 Backend: Django
 Database:PostgreSQL
-Natural Language Processing (NLP):
-GPT (using Hugging Face Transformers library)
+Model: GPT 3.5 Turbo by OpenAI
