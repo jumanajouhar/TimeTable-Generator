@@ -1,0 +1,73 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Inputs</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'input.css' %}">
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+
+    <form id="subjectForm">
+
+        <h2>Subject Inputs</h2>
+
+        <label for="numSubjects">Number of Subjects:</label>
+        <input type="number" id="numSubjects" min="1" required>
+        <button type="button" onclick="generateInputs()">Generate Inputs</button>
+
+        <div id="subjectInputs"></div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+        function generateInputs() {
+            var numSubjects = document.getElementById("numSubjects").value;
+            var subjectInputsDiv = document.getElementById("subjectInputs");
+
+            // Clear previous inputs
+            subjectInputsDiv.innerHTML = "";
+
+            for (var i = 1; i <= numSubjects; i++) {
+                var subjectNameLabel = document.createElement("label");
+                subjectNameLabel.innerHTML = "Subject " + i + " Name:";
+                var subjectNameInput = document.createElement("input");
+                subjectNameInput.type = "text";
+                subjectNameInput.name = "subjectName" + i;
+                subjectNameInput.required = true;
+
+                var maxTimeLabel = document.createElement("label");
+                maxTimeLabel.innerHTML = "Maximum Time Available for Subject " + i + " (in hours):";
+                var maxTimeInput = document.createElement("input");
+                maxTimeInput.type = "number";
+                maxTimeInput.name = "maxTime" + i;
+                maxTimeInput.min = "1";
+                maxTimeInput.required = true;
+
+                var breaksLabel = document.createElement("label");
+                breaksLabel.innerHTML = "Number of Breaks for Subject " + i + ":";
+                var breaksInput = document.createElement("input");
+                breaksInput.type = "number";
+                breaksInput.name = "breaks" + i;
+                breaksInput.min = "0";
+                breaksInput.required = true;
+
+                subjectInputsDiv.appendChild(subjectNameLabel);
+                subjectInputsDiv.appendChild(subjectNameInput);
+                subjectInputsDiv.appendChild(maxTimeLabel);
+                subjectInputsDiv.appendChild(maxTimeInput);
+                subjectInputsDiv.appendChild(breaksLabel);
+                subjectInputsDiv.appendChild(breaksInput);
+            }
+        }
+    </script>
+
+</body>
+</html>
